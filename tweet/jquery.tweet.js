@@ -119,13 +119,13 @@
     }
 
     function format_relative_time(time_ago) {
-      if ( time_ago.days > 2 )     return 'about ' + time_ago.days + ' days ago';
-      if ( time_ago.hours > 24 )   return 'about a day ago';
-      if ( time_ago.hours > 2 )    return 'about ' + time_ago.hours + ' hours ago';
-      if ( time_ago.minutes > 45 ) return 'about an hour ago';
-      if ( time_ago.minutes > 2 )  return 'about ' + time_ago.minutes + ' minutes ago';
-      if ( time_ago.seconds > 1 )  return 'about ' + time_ago.seconds + ' seconds ago';
-      return 'just now';
+      if ( time_ago.days > 2 )     return 'hace ' + time_ago.days + ' días atrás';
+      if ( time_ago.hours > 24 )   return 'ayer';
+      if ( time_ago.hours > 2 )    return 'hace ' + time_ago.hours + ' horas atrás';
+      if ( time_ago.minutes > 45 ) return 'hace 1 hora atrás';
+      if ( time_ago.minutes > 2 )  return 'hace ' + time_ago.minutes + ' minutos atrás';
+      if ( time_ago.seconds > 1 )  return 'hace ' + time_ago.seconds + ' segundos atrás';
+      return 'justo ahora';
     }
 
     function build_auto_join_text(text) {
